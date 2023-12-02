@@ -1,0 +1,65 @@
+<!-- res/layout/activity_website_grid.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Budgeting Tips"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginBottom="16dp" />
+
+    <!-- Take Budget Quiz Button -->
+    <Button
+        android:id="@+id/btnBudgetQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Budget Quiz"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/textViewTitle"
+    android:layout_marginStart="16dp" />
+
+    <!-- Top Link Layout -->
+    <LinearLayout
+        android:id="@+id/topLinkLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="7dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewTopLink"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/textViewTopLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Learn More"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- GridView -->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="617dp"
+        android:layout_below="@id/topLinkLayout"
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"
+        android:verticalSpacing="16dp" />
+
+</RelativeLayout>

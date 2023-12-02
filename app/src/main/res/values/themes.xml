@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EasyRecipes" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#AAAAAA</item> <!-- Replace with your preferred darker grey color -->
+        <item name="colorPrimaryVariant">#1976D2</item> <!-- Set the primary variant color -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- Set the text color on primary color -->
+
+        <item name="colorSecondary">#FF4081</item> <!-- Set the secondary color -->
+        <item name="colorSecondaryVariant">#F50057</item> <!-- Set the secondary variant color -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- Set the text color on secondary color -->
+
+        <!-- Customize other color attributes as needed -->
+    </style>
+
+    <style name="Theme.EasyRecipes" parent="Base.Theme.EasyRecipes" />
+</resources>

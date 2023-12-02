@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA"
+    tools:context=".TrackTransactionActivity">
+
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAmount"
+        android:hint="Description"/>
+
+    <Spinner
+        android:id="@+id/spinnerTransactionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDescription"
+        android:layout_marginTop="16dp"
+        android:entries="@array/transaction_types"/>
+
+    <Button
+        android:id="@+id/buttonAddTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerTransactionType"
+        android:layout_marginTop="16dp"
+        android:text="Add Transaction" />
+    <Button
+        android:id="@+id/buttonBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddTransaction"
+    android:layout_marginTop="16dp"
+    android:text="Budget Breakdown" />
+
+    <TextView
+        android:id="@+id/textViewTotalIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBudget"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="Total Income: 0.0"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textViewTotalExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalIncome"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="Total Expenses: 0.0"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textViewIncomeMinusExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalExpenses"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="Income - Expenses: 0.0"
+        android:textSize="14sp"/>
+
+    <!-- Other UI elements -->
+
+    <ListView
+        android:id="@+id/listViewTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewIncomeMinusExpenses"
+        android:layout_marginTop="16dp"
+        android:background="#303030"
+        android:divider="#87CEFA"
+        android:dividerHeight="1dp"
+        android:listSelector="#87CEFA"
+        android:padding="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Easy Recipes</string>
+    <string name="btRecipe">View Recipe</string>
+    <string name="tvTitle">Strawberry Sorbet Recipe</string>
+    <string name="description">Recipe Image</string>
+    <string name="tvingredients">Ingredients</string>
+    <string name="tvitem1">6 cups chopped</string>
+    <string name="tvitem2">1 T lemon juice</string>
+    <string name="tvitem3">1 cup sugar</string>
+    <string name="tvitem4">1/4 cup cold water</string>
+    <string name="tvDirections">Directions</string>
+    <string name="tvMix">Process unitl smooth in the blender. Freeze for 8 hours in covered container</string>
+</resources>
